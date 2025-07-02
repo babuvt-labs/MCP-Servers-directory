@@ -1,0 +1,18 @@
+swagger: '2.0'
+info:
+  title: Microsoft Learn
+  description: Tilgang til Microsoft Learn dokumentasjon
+  version: 1.0.0
+host: learn.microsoft.com
+basePath: /
+schemes:
+  - https
+paths:
+  /api/mcp:
+    post:
+      summary: Microsoft Learn MCP API
+      x-ms-agentic-protocol: mcp-streamable-1.0
+      operationId: InvokeMCP
+      responses:
+        '200':
+          description: Success
